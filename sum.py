@@ -1,7 +1,7 @@
 sum = 0
 n = 1
 
-while n <= 100 :
+while n <= 5:
     sum = sum + n
     n = n + 1
 
