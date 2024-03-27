@@ -31,3 +31,9 @@ print('Job')
 print('1\n2\n3') # 문자열 안에 \n 을 사용 (줄바꿈)
 
 print(1, 2, 3, sep='\n')
+
+print("Hello"); print("World!")
+
+
+name = input("이름이 무엇인가요?")
+print("만나서 반갑습니다. " + name + "씨!")
