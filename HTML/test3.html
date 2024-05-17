@@ -46,15 +46,54 @@
             margin-left: 10px;
             width: 20px;
             height: 230px;
-            line-height: 230px;
             border: 2px solid gold;
         }
 
-        #menu_content {
-            width: 20px;
-            margin-left: -30px;
-        }
+        #menu_content1 {
+            width: 47px;
+            height: 40px;
+            border: 2px solid gold;
+            font-size: 13px;
+            margin-left: -35px;
+            margin-top: 12px;
+            background: #076585;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+        }
+        #menu_content2 {
+            width: 47px;
+            height: 40px;
+            background: #fffc00;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border: 2px solid gold;
+            font-size: 13px;
+            margin-left: -35px;
+            margin-top: 6px;
+        }
+        #menu_content3 {
+            width: 47px;
+            height: 40px;
+            background: #EF3B36;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #FFFFFF, #EF3B36);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #FFFFFF, #EF3B36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border: 2px solid gold;
+            font-size: 13px;
+            margin-left: -35px;
+            margin-top: 6px;
+        }
+        #menu_content4 {
+            width: 47px;
+            height: 40px;
+            background: #A1FFCE;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            border: 2px solid gold;
+            font-size: 13px;
+            margin-left: -35px;
+            margin-top: 6px;
+        }
         #con1 {
             margin-left: 85px;
             margin-bottom: 1px;
@@ -80,6 +119,19 @@
             margin-right: 10px;
             line-height: 230px;
         }
+        #logo {
+            width: 30px;
+            height: 30px;
+            margin-right: -120px;
+            margin-left: -120px;
+
+        }
+
+        .content_footer {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -91,7 +143,18 @@
         <main id="main">
             <p>main</p>
             <menu id="menu">
-                <div id="menu_content">menu</div>
+                <div id="menu_content1">menu
+                <p>1</p>
+                </div>
+                <div id="menu_content2">menu
+                    <p>2</p>
+                </div>
+                <div id="menu_content3">menu
+                <p>3</p>
+                </div>
+                <div id="menu_content4">menu
+                    <p>4</p>
+                </div>
             </menu>
             <aside>
                 <p>aside</p>
@@ -103,7 +166,13 @@
                 <p>content2</p>
             </div>
         </main>
-        <footer>footer</footer>
+        <footer>
+            <div class="content_footer">
+                <span style="color: red; font-weight: bold;">영진전문대학</span>
+                <img src="img/logo.jpg" alt="" id="logo">
+                <span style="color: green; font-weight: bold;">컴퓨터정보계열</span>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
