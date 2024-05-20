@@ -18,13 +18,12 @@
             border: 2px solid gold;
         }
         header {
-            background-image: url(img/header.jpg);
             margin-top: 5px;
             width: 560px;
             height: 50px;
             border: 2px solid gold;
+            font-size: 20px;
             line-height: 50px;
-            background-color: rgb(32, 235, 32);
         }
         #main {
             margin-top: 5px;
@@ -43,9 +42,10 @@
         
         #menu {
             float: left;
+            margin-top: 10px;
             margin-left: 10px;
             width: 20px;
-            height: 230px;
+            height: 250px;
             border: 2px solid gold;
         }
         .menu_centent {
@@ -56,7 +56,7 @@
         }
         #menu_content1 {
             margin-left: -35px;
-            margin-top: 12px;
+            margin-top: 25px;
             background: #076585;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to bottom, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to bottom, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -67,46 +67,48 @@
             background: -webkit-linear-gradient(to bottom, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to bottom, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             margin-left: -35px;
-            margin-top: 6px;
+            margin-top: 10px;
         }
         #menu_content3 {
             background: #EF3B36;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to bottom, #FFFFFF, #EF3B36);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to bottom, #FFFFFF, #EF3B36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             margin-left: -35px;
-            margin-top: 6px;
+            margin-top: 10px;
         }
         #menu_content4 {
             background: #A1FFCE;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             margin-left: -35px;
-            margin-top: 6px;
+            margin-top: 10px;
         }
         #con1 {
+            margin-top: 10px;
             margin-left: 85px;
-            margin-bottom: 1px;
-            width: 360px;
-            height: 130px;
-            line-height: 130px;
+            margin-bottom: 0px;
+            width: 340px;
+            height: 180px;
+            font-size: 10px;
+            text-align: left;
             border: 2px solid gold; 
+            padding: 10px;
         }
         #con2 {
             margin-left: 85px;
             width: 360px;
-            height: 97px;
-            line-height: 100px;
+            height: 45px;
+            line-height: 40px;
             border: 2px solid gold; 
         }
 
         aside {
-            background-image: url(img/aside.jpg);
             float: right;
             width: 90px;
-            height: 230px;
+            margin-top: 10px;
+            height: 250px;
             border: 2px solid gold;
             margin-right: 10px;
-            line-height: 230px;
         }
         #logo {
             width: 30px;
@@ -121,16 +123,34 @@
             align-items: center;
             gap: 0.5rem;
         }
+        #aside {
+            width: 85px;
+            height: 50px;
+            border: 1px solid black;
+            font-size: 8px;
+            border-collapse: collapse;
+            margin-top: 8px;
+        }
+        #btn {
+            background-color: lightskyblue;
+            border: none;
+            width: 60px;
+            height: 20px;
+            border-radius: 3px;
+            margin: 3px;
+            color: red;
+            font-weight: bold;
+            font-size: 9px;
+        }
     </style>
 </head>
 <body>
-    <div id="content">
-        <p>tbox</p>
         <header>
-            <p>header</p>
+            <div id="header">
+                <p style="font-weight: bold;"><span style="color: red; font-family: bold;">Welcome to</span><span style="font-weight: bold; color: blue;"> My</span> Homepage</p>
+            </div>
         </header>
         <main id="main">
-            <p>main</p>
             <menu id="menu">
                 <div id="menu_content1" class="menu_centent">menu
                 <p>1</p>
@@ -146,10 +166,37 @@
                 </div>
             </menu>
             <aside>
-                <p>aside</p>
+                <table id="aside" border="1">
+                    <tr>
+                        <td style="width: 10x;">아이디</th>
+                        <td style="color: white;">아이디</td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td style="color: white;">아이디</td>
+                    </tr>
+                    <tr sp>
+                        <td colspan='2'><input type="button" value="확인" id="btn"></td>
+                    </tr>
+                </table>
             </aside>
             <div id="con1">
-                <p>content1</p>
+                <p style="font-weight: bold;"><span style="color: red;">HTML5</span>는 <a href="#">HTML</a>의 완전환 5번째 버전으로 월드 와<br>
+                    이드 웹 (World Wide Web)의 핵심 <a href="#">마크업 언어</a>이다.<br>
+                    2004년 7월 Web Hypertext Application Technology<br>
+                    Working Group(WHATWG)에서 웹 애플리케이션 1.0<br>
+                    이라는 이름으로 세부 명세 작업을 시작하였다.
+                </p>
+                <br>
+                <h3>목차</h2>
+                <br>
+                <div id="con_1">
+                    <p>1 HTML4와의 차이점</p>
+                    <p>2 일정 및 역사</p>
+                    <p>3 브라우저 지원 현황</p>
+                    <p>4 같이 보기</p>
+                    <p>5 각주</p>
+                </div>
             </div>
             <div id="con2">
                 <p>content2</p>
@@ -162,6 +209,5 @@
                 <span style="color: green; font-weight: bold;">컴퓨터정보계열</span>
             </div>
         </footer>
-    </div>
 </body>
 </html>
