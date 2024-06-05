@@ -12,3 +12,4 @@ elif (month == 1 or month == 2 or month == 12) :
     print("겨울 입니다.")
 else :
     print("그런 월은 없습니다.")
+

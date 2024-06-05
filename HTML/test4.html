@@ -11,104 +11,50 @@
 
         body {
             text-align: center;
+            font-size: 12px;
         }
         #content {
             width: 600px;
             height: 420px;
-            border: 2px solid gold;
+            border: 1px solid black;
         }
         header {
             margin-top: 5px;
             width: 560px;
-            height: 50px;
-            border: 2px solid gold;
-            font-size: 20px;
-            line-height: 50px;
+            height: 70px;
+            border: 1px solid black;
+            background-image: url(img/aside.jpg);
         }
         #main {
             margin-top: 5px;
             width: 560px;
-            height: 270px;
-            border: 2px solid gold;
+            height: 340px;
+            border: 1px solid black;
         }
         footer {
             background-image: url(img/footer.jpg);
-            margin-top: 10px;
+            margin-top: 7px;
             line-height: 40px;
             width: 560px;
             height: 40px;
-            border: 2px solid gold;
+            border: 1px solid black;
         }
         
         #menu {
             float: left;
-            margin-top: 10px;
-            margin-left: 10px;
-            width: 20px;
-            height: 250px;
-            border: 2px solid gold;
-        }
-        .menu_centent {
-            width: 47px;
-            height: 40px;
-            border: 2px solid gold;
-            font-size: 13px;
-        }
-        #menu_content1 {
-            margin-left: -35px;
-            margin-top: 25px;
-            background: #076585;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to bottom, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to bottom, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        }
-        #menu_content2 {
-            background: #fffc00;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to bottom, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to bottom, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            margin-left: -35px;
-            margin-top: 10px;
-        }
-        #menu_content3 {
-            background: #EF3B36;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to bottom, #FFFFFF, #EF3B36);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to bottom, #FFFFFF, #EF3B36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            margin-left: -35px;
-            margin-top: 10px;
-        }
-        #menu_content4 {
-            background: #A1FFCE;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            margin-left: -35px;
-            margin-top: 10px;
+            width: 60px;
+            height: 340px;
+            border: 1px solid black;
         }
         #con1 {
-            margin-top: 10px;
-            margin-left: 85px;
+            margin-left: 100px;
             margin-bottom: 0px;
-            width: 340px;
-            height: 180px;
-            font-size: 10px;
+            width: 440px;
+            height: 320px;
+            font-size: 12px;
             text-align: left;
-            border: 2px solid gold; 
+            border: 1px solid black;
             padding: 10px;
-        }
-        #con2 {
-            margin-left: 85px;
-            width: 360px;
-            height: 45px;
-            line-height: 40px;
-            border: 2px solid gold; 
-        }
-
-        aside {
-            float: right;
-            width: 90px;
-            margin-top: 10px;
-            height: 250px;
-            border: 2px solid gold;
-            margin-right: 10px;
         }
         #logo {
             width: 30px;
@@ -121,92 +67,143 @@
         .content_footer {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
         }
-        #aside {
-            width: 85px;
-            height: 50px;
-            border: 1px solid black;
-            font-size: 8px;
-            border-collapse: collapse;
-            margin-top: 8px;
-        }
-        #btn {
-            background-color: lightskyblue;
-            border: none;
-            width: 60px;
-            height: 20px;
-            border-radius: 3px;
-            margin: 3px;
+
+        .red {
             color: red;
             font-weight: bold;
-            font-size: 9px;
+            font-size: 12px;
+        }
+        
+        .blue {
+            color: blue;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        #contentimg {
+            background-image: url(img/logo.jpg);
+        }
+
+        a {
+            text-decoration: none;
+        }
+        li:hover {
+            background-color: orange;
+        }
+        table {
+            Table-layout:fixed;
         }
     </style>
 </head>
 <body>
         <header>
             <div id="header">
-                <p style="font-weight: bold;"><span style="color: red; font-family: bold;">Welcome to</span><span style="font-weight: bold; color: blue;"> My</span> Homepage</p>
+                <table border="2" style="float: left; width: 100px;">
+                    <tr>
+                        <td style="background-color: bisque;">홍길동</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: aqua;">1501001</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: bisque;">1 -F</td>
+                    </tr>
+                </table>
+                <br>
+                <div style="float: left; margin-left: 110px; line-height: 15px;">
+                    <p style="font-weight: bold; color: red; font-size: 15px;"><span style="color: blue; font-family: bold;">Welcome to</span><span style="font-weight: bold; color: blue;"> My</span> Homepage</p>
+                    <br><p>2015학년도 <span class="blue">HTML5</span> 중간고사</p>
+                </div>
+                <div style="margin-right: -60px;">
+                    <a href="https://www.youtube.com"><img src="img/youtube.png" alt="" style="width: 40px; border: 1px solid black;"></a>
+                    <a href="https://www.facebook.com"><img src="img/facebook.png" alt="" style="width: 40px; border: 1px solid black;"></a>
+                </div>    
             </div>
         </header>
         <main id="main">
             <menu id="menu">
-                <div id="menu_content1" class="menu_centent">menu
-                <p>1</p>
-                </div>
-                <div id="menu_content2" class="menu_centent">menu
-                    <p>2</p>
-                </div>
-                <div id="menu_content3" class="menu_centent">menu
-                <p>3</p>
-                </div>
-                <div id="menu_content4" class="menu_centent">menu
-                    <p>4</p>
+                    <table border="1" style="margin-left: -35px; width:90px;">
+                        <tr>
+                            <td style=" font-size:9px;">아이디</td>
+                            <td><input type="text" style="width:30px;"></td>
+                        </tr>
+                        <tr>
+                            <td style=" font-size:9px;">암호</td>
+                            <td><input type="password" style="width:30px;"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="button" value="로그온" style="font-size: 9px;"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div style="margin-left: -50px; margin-bottom: 15px;">
+                        <h2 class="red">주요방송국</h2>
+                        <ul>
+                            <li><a href="">kbs</a></li>
+                            <li><a href="">mbcs</a></li>
+                            <li><a href="" style="color: blue;">sbs</a></li>
+                        </ul>
+                    </div>
+                <div style="float: right;">
+                    <table border="1" style="margin-left: 213px; width:90px;">
+                        <tr>
+                            <td colspan="2" style="background-color: yellow;">음악듣기</td>
+                        </tr>
+                        <tr>
+                            <td>노래1</td>
+                            <td><audio src=""></audio></td>
+                        </tr>
+                        <tr>
+                            <td>노래2</td>
+                            <td><audio src=""></audio></td>
+                        </tr>
+                    </table>
+                    <table border="1" style="margin-left: 213px; width:100px;">
+                        <tr>
+                            <td colspan="2" style="background-color: yellow;">영화보기</td>
+                        </tr>
+                        <tr>
+                            <td><video style="height: 60px;"></video></td>
+                        </tr>
+                    </table>
                 </div>
             </menu>
-            <aside>
-                <table id="aside" border="1">
-                    <tr>
-                        <td style="width: 10x;">아이디</th>
-                        <td style="color: white;">아이디</td>
-                    </tr>
-                    <tr>
-                        <td>비밀번호</td>
-                        <td style="color: white;">아이디</td>
-                    </tr>
-                    <tr sp>
-                        <td colspan='2'><input type="button" value="확인" id="btn"></td>
-                    </tr>
-                </table>
-            </aside>
             <div id="con1">
-                <p style="font-weight: bold;"><span style="color: red;">HTML5</span>는 <a href="#">HTML</a>의 완전환 5번째 버전으로 월드 와<br>
-                    이드 웹 (World Wide Web)의 핵심 <a href="#">마크업 언어</a>이다.<br>
-                    2004년 7월 Web Hypertext Application Technology<br>
-                    Working Group(WHATWG)에서 웹 애플리케이션 1.0<br>
-                    이라는 이름으로 세부 명세 작업을 시작하였다.
-                </p>
+                <h2 style="text-align: center; font-size: 15px;" class="red">HTML5 <span class="blue" style="font-size: 15px;">&</span> CSS3</h2>
                 <br>
-                <h3>목차</h2>
+                <span class="blue" style="font-size: 15px;">H</span><span class="blue">TML5</span><span>는 HTML의 차기 주요 제안 버전으로 <span class="red">월드 와이드 웹 (World Wide Web)
+                <br>의 핵심 마크업 언어</span><span>이다</span><span> 2004년 7월 Web Hypertext Application Technology<br>
+                Woring Group(WHATWG)에서 </span><span class="red" style="background-color: yellow;"> 웹 애플리케이션 1.0</span><span>이라는 이름으로 세부 명세 작<br>
+                업을 시작하였다.</span>
                 <br>
-                <div id="con_1">
-                    <p>1 HTML4와의 차이점</p>
-                    <p>2 일정 및 역사</p>
-                    <p>3 브라우저 지원 현황</p>
-                    <p>4 같이 보기</p>
-                    <p>5 각주</p>
+                <br>
+                <span class="blue" style="font-size: 15px;">C</span><span class="blue">SS3</span><span>는 기존의 CSS2가 갖지 못했던 화려하고 역동적인 면모를 추가하여 포토샵과<br>
+                자바스크립트 및 서버측 기술에만 완전히 의존하던 영역들을 개척했다.<span class="blue">상자의 크<br>
+                기에 따른 말줄임 표시, 투명한 배경, 그림자 효과, 둥근 모서리, 그라디언트, 도형<br>
+                의 회전과 비둘기, 애니메이션 효과</span><span> 등이 가능해지면서 웹 사이트의</span><span class="red"> 성능 향상에 크
+                게 기여</span><span>할 수 있게 되었다.</span>
+                <br>
+                <br>
+                <hr style="border: 1.4px solid red">
+                <br>
+                <div style="text-align: center;" id="contentimg">
+                    <span style="color: green; font-weight: bold;">[오늘의 설문]</span><span class="blue"> 1학기 MT로 가고 싶은 장소는?</span>
+                    <br>
+                    <br>
+                    <div>
+                        <input type="radio" checked>동해바다
+                        <input type="radio" style="margin-left: 10px ;">계곡이있는산
+                        <input type="radio" style="margin-left: 10px ;">관광명소
+                        <input type="radio" style="margin-left: 10px ;">놀이시설
+                    </div>
                 </div>
-            </div>
-            <div id="con2">
-                <p>content2</p>
             </div>
         </main>
         <footer>
             <div class="content_footer">
-                <span style="color: red; font-weight: bold;">영진전문대학</span>
+                <span style="color: red; font-weight: bold; margin-right: 125px;">영진전문대학</span>
                 <img src="img/logo.jpg" alt="" id="logo">
-                <span style="color: green; font-weight: bold;">컴퓨터정보계열</span>
+                <span style="color: green; font-weight: bold; margin-left: 125px;">컴퓨터정보계열</span>
             </div>
         </footer>
 </body>

@@ -1,0 +1,12 @@
+# while문에서 break 사용하기
+
+i = 0
+
+while True : # 무한 루프
+    print(i, end=" ")
+    i += 1
+    if i == 10 : # 특정 조건 만족하면
+        break # 반복문 종료
+
+print(end="\n")
+print("무한루프 탈출")
